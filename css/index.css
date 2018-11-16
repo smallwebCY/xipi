@@ -1,0 +1,100 @@
+@font-face {font-family: 'iconfont';
+    src: url('../myfont/iconfont.eot');
+    src: url('../myfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../myfont/iconfont.woff') format('woff'),
+    url('../myfont/iconfont.ttf') format('truetype'),
+    url('../myfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+#index .header-body {
+	background-image: url(../img/top_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat
+}
+
+#services .serve-list .serve-item .iconfont-area {}
+#personal .personal-header[data-v-5cbb20d8]{
+	background: url(../img/personalbg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+#login #popup{
+	display: none;
+}
+#index .unselect-car{
+	display: none;
+}
+#history-car[data-v-0cf629e2]{
+	display: none;
+}
+#history-car .history-content .history-line .right-box[data-v-0cf629e2]{
+	display: none;
+	line-height: 64px;
+}
+#personal .personal-model{
+	display: none;
+}
+#popup{
+	display: none;
+}
+.board{
+	display: none;
+}
+#information .color-boder[data-v-3bfd7ae3]{
+	background-image: url(../img/information_line.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+}
+.address-line .line-name{
+	display: none;
+}
+.repair-list{
+	display: none;
+}
+#coupon-list{
+	display: none;
+}
+#pay-type{
+	display: none;
+}
+.invoice-detail{
+	display: none;
+}
+.qiye{
+	display: none;
+}
+/*#index .information-scroll .right-information .inner-right-information{
+	transition: none;
+    position: absolute;
+}
+#index .information-scroll .right-information .inner-right-information {
+	-webkit-animation-name: marq;
+	-webkit-animation-duration: 5000;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: .5s;
+	-webkit-animation-iteration-count: initial;
+	-webkit-animation-direction: reverse; 动画是否反向播放 
+	-webkit-animation-state: runing;
+	animation-name: marq;
+	animation-duration: 5000;
+	animation-timing-function: linear;
+	animation-delay: .5s;
+	animation-iteration-count: initial;
+	animation-direction: reverse; 动画是否反向播放 
+	animation-state: runing;
+}
+
+@keyframes marq {
+	from {top: 0;}
+	to {top: -1000px;}
+}
+
+@-webkit-keyframes marq {
+	from {top: 0;}
+	to {top: -1000px;}
+}*/

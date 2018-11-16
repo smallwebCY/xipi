@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="jquery-weui/dist/css/weui.mini.css"/>
+		<link rel="stylesheet" type="text/css" href="jquery-weui/dist/css/jquery-weui.css"/>
+		<style type="text/css">
+			html{
+				font-size: 20px;
+			}
+			.weui-input{
+				width: 100%;
+				height: 100%;
+				background-color: saddlebrown;
+			}
+		</style>
+	</head>
+	<body>
+		<input class="weui-input" id="name" type="text" value="" readonly="">
+		<script src="jquery-weui/dist/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-weui/dist/lib/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		  $(function() {
+		    FastClick.attach(document.body);
+		  });
+		</script>
+		<script src="jquery-weui/dist/js/jquery-weui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#name").picker({
+        title: "怎么称呼您？",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['Mr', 'Ms']
+          },
+          {
+            textAlign: 'center',
+            values: ['Amy', 'Bob', 'Cat', 'Dog', 'Ella', 'Fox', 'Google']
+          }
+        ]
+      });
+		</script>
+	</body>
+</html>

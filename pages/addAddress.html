@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<title>携车网</title>
+		<!--<script charset="utf-8" src="http://lxbjs.baidu.com/lxb.js?sid=8303647"></script>
+		<script charset="utf-8" src="https://tag.baidu.com/vcard/v.js?siteid=8303647&amp;url=http%3A%2F%2Fwww.carvalue.com.cn%2Fwx%2Fdefault%23%2Finformation&amp;source=&amp;rnd=1713754470&amp;hm=1"></script>
+		<script src="https://hm.baidu.com/hm.js?af9d0576fc0b4c8e48dc9588648cb836"></script>-->
+		<script type="text/javascript">
+			var _hmt = _hmt || [];
+		</script>
+		<!--<link rel="stylesheet" href="../css/mui.min.css">-->
+		<link rel="stylesheet" type="text/css" href="../jquery-weui/dist/css/weui.mini.css" />
+		<link rel="stylesheet" type="text/css" href="../jquery-weui/dist/css/jquery-weui.min.css" />
+		<link href="../css/mui.picker.css" rel="stylesheet" />
+		<link href="../css/mui.poppicker.css" rel="stylesheet" />
+		<link href="../css/app.e085d2.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<style type="text/css">
+			.mui-backdrop{
+				position: fixed;
+			    z-index: 998;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			    background: rgba(0,0,0,.5);
+			    touch-action: manipulation;
+			    user-select: none;
+			    -webkit-user-drag: none;
+			    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			    /*background-color: rgba(0,0,0,.3);*/
+			}
+			.mui-picker{
+				background-color: #fff;
+			}
+			.mui-poppicker-header{
+				background: #fff;
+			}
+			.mui-poppicker-header .mui-btn{
+				background: transparent;
+			    border: none;
+			    font-size: 16px;
+			}
+			.mui-poppicker-btn-ok{
+				color: #44a7ef;
+			}
+			.mui-pciker-list li{
+				font-size: 14px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<div data-v-f00d07a8="" id="add-address">
+				<div data-v-f00d07a8="" class="city-content"><i data-v-f00d07a8="" class="iconfont"></i>
+					<div data-v-f00d07a8="" class="city-name">上海市 <span data-v-f00d07a8="" class="red">*如需修改城市，请返回首页</span></div>
+				</div>
+				<div data-v-f00d07a8="" class="street-line">
+					<i data-v-f00d07a8="" class="iconfont title-iconfont"></i>
+					<div data-v-f00d07a8="" class="imitate-select" id="imitate-select">请选择您的区域 </div>
+					<!--<input type="text" data-v-f00d07a8="" name="" class="imitate-select" id="imitate-select" disabled="" value="请选择您的区域" />-->
+					<i data-v-f00d07a8="" class="iconfont right-iconfont"></i>
+				</div>
+				<div data-v-f00d07a8="" id="search-line" class="normal-line">
+					<i data-v-f00d07a8="" class="iconfont"></i> <input data-v-f00d07a8="" type="text" placeholder="请搜索小区/写字楼/停车场等">
+					<!---->
+				</div>
+				<div data-v-f00d07a8="" class="normal-line"><i data-v-f00d07a8="" class="iconfont"></i> <input data-v-f00d07a8="" id="name-input" type="text" placeholder="请输入您的名字"></div>
+				<div data-v-f00d07a8="" class="normal-line"><i data-v-f00d07a8="" class="iconfont"></i> <input data-v-f00d07a8="" id="phone-input" type="text" placeholder="请输入您的电话号码"></div>
+				<div data-v-f00d07a8="" class="bottom-button">
+					<div data-v-f00d07a8="" class="inner-bottom-button">保存</div>
+				</div>
+				<div data-v-f00d07a8="" class="picker-backdrop district-content" style="display: none; touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+					<div class="picker-wrapper">
+						<div data-v-f00d07a8="" class="top-content">
+							<div data-v-f00d07a8="" class="btn-select cancel">取消</div>
+							<div data-v-f00d07a8="" class="btn-select">确认</div>
+						</div>
+						<div class="picker-content">
+							<div class="picker-body">
+
+							</div>
+							<div class="picker-helper"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div class="board"></div>
+		</div>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?af9d0576fc0b4c8e48dc9588648cb836";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<script src="../js/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.js"></script>
+		<script src="../js/mui.poppicker.js"></script>
+		<script src="../js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>-->
+		<script src="../jquery-weui/dist/js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					
+					var _getParam = function(obj, param) {
+						return obj[param] || '';
+					};
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = doc.getElementById('imitate-select');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						
+//						$(".board").show();
+						cityPicker.show(function(items) {
+							showCityPickerButton.innerHTML = items[0].text + " " + items[1].text;
+							console.log(showCityPickerButton.innerHTML)
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+			$(".bottom-button").on("click", function() {
+				var inf = 0//信息完整  0 信息不完整
+				if(inf == 1){
+					window.location.href = 'information.html'
+				}else{
+					$.confirm({
+						title: '提示',
+						text: '请填写完整的信息',
+						onOK: function() {
+							//点击确认
+							$.closeModal();
+						},
+						onCancel: function() {
+							$.closeModal();
+						}
+					});
+				}
+				
+			})
+			
+		</script>
+	</body>
+
+</html>
